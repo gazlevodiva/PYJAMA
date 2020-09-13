@@ -1,0 +1,11 @@
+{% extends 'theme.html' %}
+{% load static %}
+{% block content %} 
+
+<div class="container text-center mt-5" id="post">
+  <!-- <img class="img-fluid rounded-circle mb-3 mb-md-0" src="https://images.crafta.ua/products/729422" style="height: 350px;"alt=""> -->
+  <h1 class="mt-5 mb-5 text-light">{{post.title}}</h1>
+  {{post.text|safe}}
+</div>
+
+{% endblock %}

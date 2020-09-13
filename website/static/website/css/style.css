@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*height: 100vh;*/
+    background-color: #fdb6ec;
+    background: linear-gradient(45deg, #fdb6ec,  #a0d6fc);
+    
+    }
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: aliceblue;
+  color: #6c757da1;
+  text-align: center;
+}
+
+#nav{
+	background-color: aliceblue;
+	color: #6c757da1;
+}
+
+#nav a{
+	color: #6c757da1;
+}
+
+/*////////*/
+
+#about{
+	color: aliceblue;
+}
+
+#blog{
+	color: aliceblue;
+	height: 100vh;
+}
+
+#blog-sector{
+	background-color: #f0f8ff33;
+    color: #6c757da1;
+    letter-spacing: 4px;
+}
+
+
+#about iframe{
+	box-shadow: -1px 0px 48px -23px rgba(199,117,199,1);
+	border-radius: 30px;
+}
+
+#offers{
+	color: aliceblue;
+}
+
+#offers .row{
+	justify-content: center;
+}
+
+#offers i{
+	font-size: 50px;
+	color: aliceblue;
+}
+
+#post {
+	height: 100vh;
+	color: aliceblue;
+}
+#post img{
+	height: 100vh;
+	box-shadow: -1px 0px 48px -23px rgba(199,117,199,1);
+}

@@ -1,0 +1,34 @@
+{% extends 'theme.html' %}
+{% load static %}
+{% block content %} 
+
+    <div class="" id="blog">
+      <div class="container text-light mb-5">
+          <h1 class="mt-5 mb-3">Section Heading</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+      </div>
+
+      <div class="text-center">
+        <img class="my-4 text-light" href="https://picsum.photos/id/237/200/300">
+      </div>
+
+      <div class="text-center" id="blog-sector">
+        <hr>
+        <h3 class="my-4 text-light">WHAT WE THINK ABOUT PYJAMAS ?</h3>
+        <hr>
+      </div>
+
+      <!-- Page Content -->
+      <div class="container text-light py-2 mb-5">
+
+        {% for post in posts %}
+          <div class="text-center mb-3">
+            <a class="h2 text-light"  href="/post/{{post.id}}">{{post.title}}</a>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+{% endblock %}
