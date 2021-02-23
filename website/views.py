@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, Offers
+from django.conf import settings
+import os
 
 
 def index(request):
@@ -20,4 +22,7 @@ def post(request, id):
 
 
 def offers(request):
-    return render(request, "offers.html")
+    path = os.path.join(settings.MEDIA_ROOT)
+    offers = Offers.objects.all()
+    context = {"res": request, "offers": offers, "path": path}	
+    return render(request, "offers.html", context)

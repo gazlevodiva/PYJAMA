@@ -11,3 +11,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Offers(models.Model):
+    name = models.CharField(max_length=200)
+    photo = models.ImageField(upload_to='images')
+    description = models.TextField()
+    price = models.IntegerField()
+
+    def __str__(self):
+        return self.name
